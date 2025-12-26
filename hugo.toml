@@ -1,0 +1,10 @@
+baseURL = 'https://marco.longhin.org/'
+languageCode = 'en-us'
+title = 'marcobrb'
+theme = 'xmin'
+sectionPagesMenu = 'main'
+
+[[menu.main]]
+name = "About Me"
+url = ""
+weight = 1
