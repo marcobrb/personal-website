@@ -37,7 +37,7 @@ markup:
     codeFences: false
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: false
     extensions:
       passthrough:
         enable: true

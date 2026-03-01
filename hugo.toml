@@ -8,3 +8,13 @@ sectionPagesMenu = 'main'
 name = "About Me"
 url = ""
 weight = 1
+
+[[menu.main]]
+name = "Manifest"
+url = "manifest"
+weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
