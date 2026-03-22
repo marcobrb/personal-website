@@ -18,8 +18,5 @@ title = "The Commandments"
 # Fight
 ### Combat anything that goes against these commandments, including this commandment.
 
-# Go to the Bottom
-### Go on until you understand. Do not stay at the top. 
-
 # Be Happy
 ### There is always at least one thing to be happy about.
