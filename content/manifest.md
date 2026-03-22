@@ -6,7 +6,7 @@ title = "The Commandments"
 # Free Information
 ### Produce free and easy access to knowledge. Do not hide.
 
-# Assume good
+# Assume Good
 ### If you do not know something, assume it is reasonable. Do not assume the contrary. 
 
 # Think Probabilistically
