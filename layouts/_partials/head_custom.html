@@ -1,0 +1,28 @@
+<script>
+(function () {
+  let sid = sessionStorage.getItem("sid");
+  if (!sid) { sid = crypto.randomUUID(); sessionStorage.setItem("sid", sid); }
+
+  const path = location.pathname;
+  const start = Date.now();
+
+  send({ type: "pageview", sid, path });
+
+  let sent = false;
+  function leave() {
+    if (sent) return;
+    sent = true;
+    send({ type: "pageleave", sid, path, duration: Date.now() - start });
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") leave();
+  });
+  window.addEventListener("pagehide", leave);
+
+  function send(data) {
+    const body = JSON.stringify(data);
+    if (navigator.sendBeacon) navigator.sendBeacon("/api/log", body);
+    else fetch("/api/log", { method: "POST", body, keepalive: true });
+  }
+})();
+</script>
