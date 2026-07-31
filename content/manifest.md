@@ -10,5 +10,3 @@ title = ''
 # Think Probabilistically
 
 # Be Curious 
-
-# Be Happy
