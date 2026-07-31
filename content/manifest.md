@@ -4,16 +4,11 @@ title = ''
 +++
 
 # Free Information
-### Produce free and easy access to knowledge. Do not hide.
 
 # Assume Good
-### If you do not know something, assume it is reasonable. Do not assume the contrary. 
 
 # Think Probabilistically
-### You can do everything right and still fail. You can do everything wrong and still succeed. 
 
 # Be Curious 
-### You will find something interesting. You're missing out otherwise.
 
 # Be Happy
-### There is always at least one thing to be happy about.
