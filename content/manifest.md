@@ -15,8 +15,5 @@ title = "The Commandments"
 # Be Curious 
 ### You will find something interesting. You're missing out otherwise.
 
-# Fight
-### Combat anything that goes against these commandments, including this commandment.
-
 # Be Happy
 ### There is always at least one thing to be happy about.

@@ -6,7 +6,34 @@
     <title>The Commandments | marcobrb</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    
+    <script>
+(function () {
+  let sid = sessionStorage.getItem("sid");
+  if (!sid) { sid = crypto.randomUUID(); sessionStorage.setItem("sid", sid); }
+
+  const path = location.pathname;
+  const start = Date.now();
+
+  send({ type: "pageview", sid, path });
+
+  let sent = false;
+  function leave() {
+    if (sent) return;
+    sent = true;
+    send({ type: "pageleave", sid, path, duration: Date.now() - start });
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") leave();
+  });
+  window.addEventListener("pagehide", leave);
+
+  function send(data) {
+    const body = JSON.stringify(data);
+    if (navigator.sendBeacon) navigator.sendBeacon("/api/log", body);
+    else fetch("/api/log", { method: "POST", body, keepalive: true });
+  }
+})();
+</script>
   </head>
 
   <body>
@@ -36,8 +63,6 @@
 <h3 id="you-can-do-everything-right-and-still-fail-you-can-do-everything-wrong-and-still-succeed">You can do everything right and still fail. You can do everything wrong and still succeed.</h3>
 <h1 id="be-curious">Be Curious</h1>
 <h3 id="you-will-find-something-interesting-youre-missing-out-otherwise">You will find something interesting. You&rsquo;re missing out otherwise.</h3>
-<h1 id="fight">Fight</h1>
-<h3 id="combat-anything-that-goes-against-these-commandments-including-this-commandment">Combat anything that goes against these commandments, including this commandment.</h3>
 <h1 id="be-happy">Be Happy</h1>
 <h3 id="there-is-always-at-least-one-thing-to-be-happy-about">There is always at least one thing to be happy about.</h3>
 
