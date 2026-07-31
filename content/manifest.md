@@ -1,6 +1,6 @@
 +++
 menus = 'Manifest'
-title = "The Commandments"
+title = ''
 +++
 
 # Free Information
