@@ -2,17 +2,21 @@ baseURL = 'https://marco.longhin.org/'
 languageCode = 'en-us'
 title = 'marcobrb'
 theme = 'xmin'
-sectionPagesMenu = 'main'
 
 [[menu.main]]
 name = "About Me"
 url = ""
 weight = 1
 
+# [[menu.main]]
+# name = "Manifest"
+# url = "manifest"
+# weight = 2
+
 [[menu.main]]
-name = "Manifest"
-url = "manifest"
-weight = 1
+name = "Blogs"
+url = "blogs"
+weight = 3
 
 [markup]
   [markup.goldmark]

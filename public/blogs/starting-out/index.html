@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fragile | marcobrb</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script>
+(function () {
+  let sid = sessionStorage.getItem("sid");
+  if (!sid) { sid = crypto.randomUUID(); sessionStorage.setItem("sid", sid); }
+
+  const path = location.pathname;
+  const start = Date.now();
+
+  send({ type: "pageview", sid, path });
+
+  let sent = false;
+  function leave() {
+    if (sent) return;
+    sent = true;
+    send({ type: "pageleave", sid, path, duration: Date.now() - start });
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") leave();
+  });
+  window.addEventListener("pagehide", leave);
+
+  function send(data) {
+    const body = JSON.stringify(data);
+    if (navigator.sendBeacon) navigator.sendBeacon("/api/log", body);
+    else fetch("/api/log", { method: "POST", body, keepalive: true });
+  }
+})();
+</script>
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">About Me</a></li>
+      
+      <li><a href="/blogs">Blogs</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+
+<div class="article-meta">
+<h1><span class="title">Fragile</span></h1>
+
+<h2 class="date">2026/08/09</h2>
+</div>
+
+
+<main>
+<p>It sounds obvious writing it, but how many things can happen in a short time in one&rsquo;s life!</p>
+<p>You also start to wonder how the things that happen shape your life. In my case, COVID had an extremely big impact on my life, so much that I sometimes wonder what beautiful things could have happened if not for it. You probably have your own things that make you wonder!</p>
+<p>Yesterday I was laying in bed thinking about this, and an adjective came into my mind: Fragile. I said, life is fragile! But I did not mean it in the physical sense.</p>
+<p>I meant it in the &ldquo;just an inch and it falls off the table&rdquo;, &ldquo;just a drop and it spills&rdquo; sense. But also the &ldquo;just pull it some more and it starts&rdquo;, &ldquo;just one more step and you&rsquo;re there&rdquo;.</p>
+<p>My highschool&rsquo;s italian professor, which also taugh us latin (I did not like it), often reminded us of her favourite saying: <em>Homo Faber Fortunae Suae</em>. A Human is maker of their own <em>luck</em>.</p>
+<p><em>Fortuna</em> in this case is what&rsquo;s called a <em>vox media</em>, a word (vox, voice) that is neutral (in the middle, medium) and carries both the positive (good) and negative (bad) meaning (luck).</p>
+<p>I think <em>Fragile</em> can be a word in the middle too.</p>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+
