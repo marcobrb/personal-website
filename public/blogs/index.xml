@@ -6,8 +6,15 @@
     <description>Recent content on marcobrb</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MiniDebConf Winterthur</title>
+      <link>http://localhost:1313/blogs/minidebconf-winterthur/</link>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/minidebconf-winterthur/</guid>
+      <description>&lt;p&gt;Some notes on my attendence of &lt;a href=&#34;https://ch2026.mini.debconf.org/&#34;&gt;MiniDebConf Winterthur 2026&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fragile</title>
       <link>http://localhost:1313/blogs/fragile/</link>

@@ -3,13 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blogs/</loc>
-    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/starting-out/</loc>
-    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/blogs/minidebconf-winterthur/</loc>
+    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/fragile/</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/manifest/</loc>
   </url><url>
