@@ -11,4 +11,4 @@ You can also find me on:
 * [GitHub](https://github.com/marcobrb/)
 * [Salsa](https://salsa.debian.org/marcobrb)
 
-I'll make sure to answer messages or questions on any platform you can find me! 
+I'll make sure to answer messages or questions on any platform you can find me!

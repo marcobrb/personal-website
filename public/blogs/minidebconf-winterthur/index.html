@@ -57,7 +57,64 @@
 
 
 <main>
-<p>Some notes on my attendence of <a href="https://ch2026.mini.debconf.org/">MiniDebConf Winterthur 2026</a>!</p>
+<h3 id="my-experience-at-minidebcamp-and-minidebconf--winterthur">My experience at MiniDebCamp and MiniDebConf @ Winterthur</h3>
+<p><img src="/minidebconf_winty/ch2026-74-closing-ceremony.av1.jpg" alt="What happened?"></p>
+<p><a href="https://ch2026.mini.debconf.org/">Link to the ConfPage.</a></p>
+<p>Thanks to Debian for paying for my stay. This was an extremely important experience: I understood where I want (and can) contribute to the project the most.</p>
+<h4 id="tuesday">Tuesday</h4>
+<p>I arrived just in time for the <a href="https://ch2026.mini.debconf.org/talks/9-packaging-workshop/">packaging workshop</a>, given by Andreas Tille, former DPL.</p>
+<p>The workshop dealt with fixing some bugs in existing debian packages, e.g. the version control system or the homepage link. It had the idea, in Adreas’ words, of showing the (or better, one of the possible) workflows of Debian packaging.</p>
+<p>Trying to find a package to debug, coincidentally Andreas found a package that he already fixed but forgot to upload to the Debian archive!!</p>
+<p>So I asked myself: is it possible that there are many cases like these, where developers are fixing packages and then forgetting to upload?</p>
+<p>We could just:</p>
+<ul>
+<li>Check the VCS of the package in the archive.</li>
+<li>See if there is a mismatch between the changelog file with the uploaded version in the archive.</li>
+<li>Run this for every package in the archive.</li>
+</ul>
+<p>It often happens that you rediscover things smart people have already thought about: this is basically <a href="https://salsa.debian.org/qa/qa/-/blob/master/data/vcswatch/vcswatch?ref_type=heads"><code>vcswatch</code></a></p>
+<h4 id="wednesday">Wednesday</h4>
+<p>André Hochuli of <a href="https://filasez.ch/team/">Filasez</a> lead us through a tour of the city of Winterthur. <a href="https://www.srf.ch/news/schweiz/aelteste-besetzung-der-schweiz-eigentuemerin-hat-genug-gisi-in-winterthur-droht-raeumung">Interesting stuff!</a></p>
+<p>In the afternoon Lunalec organized a trekking near the river Toss of Winterthur.</p>
+<p>No photos here! You should just come next time!</p>
+<h4 id="thursday">Thursday</h4>
+<p>In the morning I dived in the Debian documentation to get more familiar with the packaging process. I also started looking at outstanding bugs in the Debian bug tracking system to get my hands dirty.</p>
+<ul>
+<li>Many bugs are extremely old or outdated.</li>
+<li>(This might be obvious) There is an extreme variance in the “difficulty” of open bugs: either they are “a line is missing here, here is what it should be”, or “this package needs a complete rework”.
+<ul>
+<li>Just survivorship bias: the easy and unimportant bugs nobody wants to do because it’s “shallow work” and if the package maintainer is not active uploading is just going to be a tedious process, and the complete reworks nobody wants to do either because, if I’m not using this package and it has only a <code>popcon</code> of 10, is it worth the effort?</li>
+</ul>
+</li>
+</ul>
+<p>In the afternoon couldn’t participate because I had to do some stuff for my PhD applications :( So much do to and so little time to do it!</p>
+<h4 id="friday">Friday</h4>
+<p>I got familiar with the Universal Debian Database, which is an extremely useful resource to get information about the Debian archive.</p>
+<ul>
+<li>I wrote some queries to find bugs similar to what the Bug of the day does (the page is updated every week ?)</li>
+</ul>
+<p>I asked Stefano Rivera about this kind of bugs. Did it make sense to do a Non-mantainer-upload just to fix the vcs or the homepage weblink? He honestly said no, especially for packages that are used by very little people.</p>
+<p>During the workshop this was discussed at large: is it better for new contributors to work on packages that are not widely used, so the risk of damaging / wasting time is low? Does it make sense to work on packages that are not widely used? What about packages that are of vital importance for the few people that use them?</p>
+<p>At the end of the day, I reached this kind of conclusion for Debian (which is the same conclusion anyone reaches when trying to contribute to a project of any kind that they like, even more on a voluntary basis): just contribute to what is dear and important to you.</p>
+<p>To me, this is <code>salsa-ci</code>: infrastructure to test, build, and reproduce the debian packaging workflow. So I went back to this MR request and messaged Jochen to see if it made sense to start implementing custom DEB_BUILD_OPTIONS and PROFILES directly in debrebuild. He said yes, and that&rsquo;s what I did during the weekend.</p>
+<h4 id="saturday">Saturday</h4>
+<p>MiniDebConf!</p>
+<p>I was looking forward to watching Andreas Tille recall his experience as a DPL, and see what he would say about LLMs usage in Debian.</p>
+<p>Coincidentally, the voting for the general resolution about LLM usage in Debian ended, and results were available. Contrary to what I would have expected (?), the consensus aimed at asking for responsible usage.</p>
+<p>I’m not sure what my complete vote would have been, and I don’t what to think too much about it. But I’m sure that proposal E would have been my first preference.</p>
+<p>The talks about using Debian in schools systems, and the importance of doing so, were extremely interesting.</p>
+<p>You can find the video of all the talks <a href="https://ch2026.mini.debconf.org/schedule/">on the Schedule page</a>. Thanks to the video team!</p>
+<h4 id="sunday">Sunday</h4>
+<p>I mostly worked on debrebuild while listening and not listening to talks.</p>
+<p><a href="https://salsa.debian.org/debian/devscripts/-/merge_requests/662">Here is the final PR</a></p>
+<p>Thanks to Jochen for reviewing. He also proposed to work a new tool to cover some usescases that debrebuild can’t do!!! Amazing!!!</p>
+<p>I got to know Ralf Jung during lunch. Convinced me in very little time to just do rust instead of C or derivatives (to be honest, there was no kind of resistance from me at all - I’m just a Python guy!)</p>
+<h3 id="so-what">So what?</h3>
+<p>I decided to extend my stay in Winterthur for a week while I work more on debrebuild, my actual daily job, and other stuff.</p>
+<p>I am extremely grateful for being able to take advantage of this opportunity.</p>
+<p>Thanks to <a href="">Manut</a> and <a href="">Andre</a> for organizing. Thanks to <a href="">Filasesz</a> for hosting.</p>
+<p>Thanks to <a href="">Stefano</a> for answering my questions. Thanks to <a href="">Ralf</a>, <a href="">Nikos</a>, and others for the chats!</p>
+<p>I hope this happens again.</p>
 
 </main>
 

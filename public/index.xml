@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blogs/minidebconf-winterthur/</link>
       <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blogs/minidebconf-winterthur/</guid>
-      <description>&lt;p&gt;Some notes on my attendence of &lt;a href=&#34;https://ch2026.mini.debconf.org/&#34;&gt;MiniDebConf Winterthur 2026&lt;/a&gt;!&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;my-experience-at-minidebcamp-and-minidebconf--winterthur&#34;&gt;My experience at MiniDebCamp and MiniDebConf @ Winterthur&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/minidebconf_winty/ch2026-74-closing-ceremony.av1.jpg&#34; alt=&#34;What happened?&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ch2026.mini.debconf.org/&#34;&gt;Link to the ConfPage.&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Thanks to Debian for paying for my stay. This was an extremely important experience: I understood where I want (and can) contribute to the project the most.&lt;/p&gt;&#xA;&lt;h4 id=&#34;tuesday&#34;&gt;Tuesday&lt;/h4&gt;&#xA;&lt;p&gt;I arrived just in time for the &lt;a href=&#34;https://ch2026.mini.debconf.org/talks/9-packaging-workshop/&#34;&gt;packaging workshop&lt;/a&gt;, given by Andreas Tille, former DPL.&lt;/p&gt;&#xA;&lt;p&gt;The workshop dealt with fixing some bugs in existing debian packages, e.g. the version control system or the homepage link. It had the idea, in Adreas’ words, of showing the (or better, one of the possible) workflows of Debian packaging.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fragile</title>
