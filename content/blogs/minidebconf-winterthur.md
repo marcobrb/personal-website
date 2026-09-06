@@ -93,8 +93,8 @@ I decided to extend my stay in Winterthur for a week while I work more on debreb
 
 I am extremely grateful for being able to take advantage of this opportunity. 
 
-Thanks to [Manut]() and [Andre]() for organizing. Thanks to [Filasesz]() for hosting. 
+Thanks to [Manut](https://nm.debian.org/person/manut/) and [Andre](https://www.fundraiso.ch/en/blog/interview-with-andre-hochuli-co-founder-and-co-director-of-the-filasez-education-initiative-ch) for organizing. Thanks to [Filasesz](https://filasez.ch/) for hosting. 
 
-Thanks to [Stefano]() for answering my questions. Thanks to [Ralf](), [Nikos](), and others for the chats!
+Thanks to [Stefano](https://nm.debian.org/person/stefanor/) for answering my questions. Thanks to [Ralf](https://research.ralfj.de/), [Nikos](https://nikos.dev/), and others for the chats!
 
 I hope this happens again.
